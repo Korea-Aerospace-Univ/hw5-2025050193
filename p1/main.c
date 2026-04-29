@@ -13,7 +13,7 @@ int main(void)
                 total = a*900 + b*750 + c*200;
                 
                 if (total==N){
-                    if(c <= a || c <= b){
+                    if(c < a || c < b){
                         printf("%d %d %d\n", a, b, c);
                         check=true;
                     }
