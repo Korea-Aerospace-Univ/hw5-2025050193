@@ -7,9 +7,9 @@ int main(void)
     
     scanf("%d",&N);
     
-    for (a = 1; a*900 <= N; a++){
-        for(b = 2; b*750<=N-a*900; b+=2){
-            for(c = 1; c*200<=N-a*900-b*750; c++){
+    for (a = 1; a <= N/900; a++){
+        for(b = 2; b<=N/750; b+=2){
+            for(c = 1; c<=N/200; c++){
                 total = a*900 + b*750 + c*200;
                 
                 if (total==N){
